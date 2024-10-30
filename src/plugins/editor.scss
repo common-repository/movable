@@ -1,0 +1,34 @@
+div[data-rbd-droppable-id="droppable"] {
+	[data-rbd-draggable-id] {
+		cursor:pointer;
+	}
+	[data-rbd-draggable-id]:focus {
+		cursor:grab;
+	}
+	[data-rbd-draggable-id]:hover {
+		color:#007cba;
+		border:1px solid rgb(30,30,30)!important;
+
+		button {
+			visibility:visible;
+			color:#555d66;
+		}
+		button:hover {
+			color:#007cba;
+			// background:rgba(0,0,0,.05);
+		}
+	}
+}
+.hover\:movable {
+	opacity:.85;
+}
+.hover\:movable:before {
+	content:'';
+	position: absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	top:0;
+	z-index:1;
+	background:rgba(0,0,0,.15);
+}

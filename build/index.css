@@ -1,0 +1,3 @@
+div[data-rbd-droppable-id="droppable"] [data-rbd-draggable-id]{cursor:pointer}div[data-rbd-droppable-id="droppable"] [data-rbd-draggable-id]:focus{cursor:grab}div[data-rbd-droppable-id="droppable"] [data-rbd-draggable-id]:hover{color:#007cba;border:1px solid #1e1e1e !important}div[data-rbd-droppable-id="droppable"] [data-rbd-draggable-id]:hover button{visibility:visible;color:#555d66}div[data-rbd-droppable-id="droppable"] [data-rbd-draggable-id]:hover button:hover{color:#007cba}.hover\:movable{opacity:.85}.hover\:movable:before{content:'';position:absolute;left:0;right:0;bottom:0;top:0;z-index:1;background:rgba(0,0,0,0.15)}
+
+/*# sourceMappingURL=index.css.map*/

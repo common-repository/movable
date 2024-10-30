@@ -1,0 +1,120 @@
+/* 
+	tailwindcss styles and custom components
+*/
+
+/* @tailwind base; */
+
+[class*="movable"] .block {
+  display: block
+}
+
+[class*="movable"] .flex {
+  display: flex
+}
+
+[class*="movable"] .grid {
+  display: grid
+}
+
+[class*="movable"] .items-center {
+  align-items: center
+}
+
+[class*="movable"] .justify-end {
+  justify-content: flex-end
+}
+
+[class*="movable"] .justify-between {
+  justify-content: space-between
+}
+
+[class*="movable"] .mb-0 {
+  margin-bottom: 0px
+}
+
+[class*="movable"] .ml-1 {
+  margin-left: 4px
+}
+
+[class*="movable"] .hover\:opacity-100:hover {
+  opacity: 1
+}
+
+[class*="movable"] .text-center {
+  text-align: center
+}
+
+[class*="movable"] .invisible {
+  visibility: hidden
+}
+
+[class*="movable"] .w-3\/4 {
+  width: 75%
+}
+
+[class*="movable"] .transform {
+  --transform-translate-x: 0;
+  --transform-translate-y: 0;
+  --transform-rotate: 0;
+  --transform-skew-x: 0;
+  --transform-skew-y: 0;
+  --transform-scale-x: 1;
+  --transform-scale-y: 1;
+  transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y))
+}
+
+@-webkit-keyframes spin {
+  from {
+    transform: rotate(0deg)
+  }
+
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg)
+  }
+
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+@keyframes ping {
+  0% {
+    transform: scale(1);
+    opacity: 1
+  }
+
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1
+  }
+
+  50% {
+    opacity: .5
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
+            animation-timing-function: cubic-bezier(0.8,0,1,1)
+  }
+
+  50% {
+    transform: translateY(0);
+    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
+            animation-timing-function: cubic-bezier(0,0,0.2,1)
+  }
+}
